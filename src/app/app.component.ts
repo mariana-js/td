@@ -6,7 +6,7 @@ import { TodoComponent } from "../todo/todo.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, TodoComponent],
+  imports: [CommonModule, TodoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
