@@ -33,7 +33,7 @@ export class TodoService {
   }
   getTaskCount(): Observable<number> {
     return this.http.get<any[]>(this.api).pipe(
-      map((tasks => tasks.length) // Retorna a quantidade de tarefas
+      map((tasks => tasks.length) 
     ));
   }
 
