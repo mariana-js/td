@@ -17,7 +17,7 @@ export interface Task {
   providedIn: 'root'
 })
 export class TodoService {
-  private api = 'http://192.168.18.5:3000/taks';
+  private api = 'http://localhost:3000/taks';
   private tasks: Task[] = [];
   private orderCriterion: string = 'semordem';
 
@@ -33,7 +33,7 @@ export class TodoService {
   }
   getTaskCount(): Observable<number> {
     return this.http.get<any[]>(this.api).pipe(
-      map((tasks => tasks.length) 
+      map((tasks => tasks.length)
     ));
   }
 
