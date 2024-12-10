@@ -17,7 +17,7 @@ export interface Task {
   providedIn: 'root'
 })
 export class TodoService {
-  private api = 'http://localhost:3000/taks';
+  private api = 'https://td-qffpf7857-marianas-projects-0a5d45dd.vercel.app';
   private tasks: Task[] = [];
   private orderCriterion: string = 'semordem';
 
